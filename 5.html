@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 3 Festivals in Mumbai</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #f83600, #f9d423); /* Gradient background */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 40px;
+            margin-top: 20px;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000; /* Add shadow to text */
+        }
+        table {
+            margin-top: 20px;
+            text-align: center;
+            background-color: #282c34;
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden;
+        }
+        th {
+            background-color: #ff6f61;
+            color: white;
+            font-size: 20px;
+        }
+        td {
+            padding: 15px;
+            background-color: #3b3f46;
+            color: #f0e68c;
+        }
+        tr:hover td {
+            background-color: #ffeb3b;
+            color: black;
+        }
+        .form-group {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .form-group label {
+            color: #333333;
+            font-weight: bold;
+        }
+        #festival {
+            background-color: #ffeb3b;
+            border-color: #ff6f61;
+            color: #333333;
+        }
+        #festival option {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .navbar-custom {
+            background-color: #343a40; /* Dark background for the navbar */
+        }
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link {
+            color: #ffffff; /* White text for the navbar links */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="index.html">Mumbai Guide</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="1.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="2.html">Top 3 Places</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="3.html">Top 3 Colleges</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="4.html">Top 3 Dining Places</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="5.html">Top 3 Festivals</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Top 3 Festivals in Mumbai</h1>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Festival</th>
+                    <th>Month</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ganesh Chaturthi</td>
+                    <td>August/September</td>
+                    <td>A grand celebration dedicated to Lord Ganesha, with elaborate processions and immersion of Ganesha idols.</td>
+                </tr>
+                <tr>
+                    <td>Diwali</td>
+                    <td>October/November</td>
+                    <td>The Festival of Lights, celebrated with fireworks, sweets, and decorations all over the city.</td>
+                </tr>
+                <tr>
+                    <td>Holi</td>
+                    <td>March</td>
+                    <td>The Festival of Colors, marked by joyous celebrations with colored powders and water.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-group">
+            <label for="festival">Which festival would you like to know more about?</label>
+            <select id="festival" class="form-control">
+                <option>Ganesh Chaturthi</option>
+                <option>Diwali</option>
+                <option>Holi</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

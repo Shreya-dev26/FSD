@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 3 Dining Places in Mumbai</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 40px;
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+        }
+        .dropdown-menu {
+            background-color: #444;
+        }
+        .dropdown-item {
+            color: white;
+        }
+        p {
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+        }
+        label {
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-dark">
+
+    <!-- Container for the content -->
+    <div class="container">
+        <h1>Top 3 Dining Places in Mumbai</h1>
+        
+        <!-- Dropdown menu for selecting a dining place -->
+        <div class="dropdown text-center mt-4">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select a Dining Place
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Leopold Cafe</a>
+                <a class="dropdown-item" href="#">Bademiya</a>
+                <a class="dropdown-item" href="#">Trishna</a>
+            </div>
+        </div>
+
+        <!-- Form for user input -->
+        <form class="mt-5">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="favPlace">Favorite Dining Place</label>
+                <select class="form-control" id="favPlace">
+                    <option>Leopold Cafe</option>
+                    <option>Bademiya</option>
+                    <option>Trishna</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <p>Explore some of the best dining experiences Mumbai has to offer. Each place is known for its unique cuisine and ambiance.</p>
+    </div>
+
+    <!-- Scripts necessary for Bootstrap components -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

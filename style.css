@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.table-bordered, .table-hover {
+    background-color: #1f0099;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #555;
+    color: white;
+}
