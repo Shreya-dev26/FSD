@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation with Form Data</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #878282;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #007bff !important;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+        #userInfo {
+            display: none;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #e9f7ef;
+            border: 2px solid #c3e6cb;
+            border-radius: 8px;
+            color: #155724;
+        }
+
+        #userInfo strong {
+            color: #0f5132;
+        }
+
+        #changeTextBtn,
+        #changeImageBtn {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #28a745 !important;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #changeTextBtn:hover,
+        #changeImageBtn:hover {
+            background-color: #218838;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <h1 id="title">User Information Form</h1>
+
+    <!-- Form to collect user data -->
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age">
+
+        <button id="submitBtn" type="button">Submit</button>
+    </form>
+
+    <!-- Section to display user information -->
+    <div id="userInfo">
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Age:</strong> <span id="displayAge"></span></p>
+    </div>
+
+    <!-- Buttons for manipulating content -->
+    <button id="changeTextBtn">Change Heading Text</button>
+    <button id="changeImageBtn">Change Image</button>
+
+    <!-- Image for manipulation -->
+    <img id="myImage" src="image1.png" alt="Placeholder Image">
+
+    <script src="ass3.js"></script>
+
+</body>
+
+</html>
